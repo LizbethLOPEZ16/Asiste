@@ -1,12 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <title>VoyageWineTours!
+        </title>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+         {% block ogMeta %}{% endblock %}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet">
+        <link href="../css/main.css" rel="stylesheet">
+        
+        {% block stylesheets %}
+           
+        {% endblock %}
     </head>
-    <body>
+    <body> 
+        <header class="main-header">
+            <nav class="navbar navbar-expand-lg navbar-with bg btn-black">
+             <div class="container">
+                <a class="navbar-brand"><img height="110" src="/images/wine.png" width="200" alt="wine"></a>
+                <button btn btn-danger aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarTogglerDemo02" data-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button><div align='center'>
+
+                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                   <ul class="navbar-nav ml-auto mt-2 mt-lg-0"> 
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark" href="/">
+                                Home
+                            </a>
+                        </li>
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark" href="/about">
+                                About
+                            </a>
+                        </li>
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark" href="/privatetours">
+                                Private Tours
+                            </a>
+                        </li>
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark" href="/booknow">
+                                BookNow
+                            </a>
+                        </li>
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark"  href="/subscribe">
+                                Subscribe
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div></div>
+        </nav>
+      </header>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+        <footer class="footer" class="mdc-layout-grid">
+        <div class="container">
+         <div class="row">
+                <div class="col-md-4">
+                    <img class="card-img-top" src="/images/wine.png" alt="wine">
+                </div>
+
+                 <div class="col-md-4 "><div align='center'>
+                    <div class="social-media">
+                         <a href="https://www.facebook.com/voyagewinetours/">
+                            <img height="60px " src="/images/face.png" width="60px">
+                        </a>
+                        <a href="https://www.instagram.com/voyagewinetours/">
+                            <img height="60px " src="/images/insta.png" width="60px">
+                        </a>
+                        <a href="https://www.tripadvisor.com/tripadvisor/">
+                            <img height="60px " src="/images/Tri.png" width="60px">
+                        </a>
+                        <a href="https://www.yelp.com/yelp/">
+                            <img height="60px " src="/images/yelp.png" width="60px">
+                        </a>
+                    </div></br>
+                        <small>
+                                {{ "now"|date("Y") }} Voyage Wine Tours. 
+                                 <p>All Rights Reserved.</p> 
+                        </small>
+                    </div>
+                </div>
+
+                <div class="col-md-4 "><div align='center'>
+                    <div class="subs">
+                    <a class="card-img-top" href="/subscribe"><img height="110" src="/images/subs.png" alt="subs">
+                     </div></br>
+                     <small>
+                        <p>Phone: (664) 477 1836 </br> 
+                        Email: voyagewinetours@gmail.com </p> 
+                     </small>
+                    </div></a>
+                </div>
+                </div>
+            </div>
+         </div>
+        </footer>
+        {% block javascripts %}
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script> 
+        {% endblock %}
+        
+</body>
 </html>

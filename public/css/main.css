@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+}
+header.main-header {
+  background-color: #000000;
+}
+footer.footer {
+  background-color: #000000;
+  padding-top: 50px;
+  justify-content: start;
+}
+div.card-deck {
+  padding: 0px 50px 30px;
+}
+div.col-12 {
+  background-color: #660020;
+}
+small {
+  color: #ffffff;
+  font-size: 100%;
+}
+div.social-media {
+  margin-top: 50px;
+}
+div.contenedor {
+  transform: scale(0.9);
+  font-size: 1.2em;
+}
+.contenedor {
+  overflow: hidden;
+}
+.contenedores {
+  margin-top: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+button.navbar-toggler {
+  border-color: #660033;
+  background-color: #660033;
+}
+.navbar-nav .nav-link {
+  color: #ffffff;
+}
+label {
+  color: #ffffff;
+  font-size: 25px;
+}
+.btn {
+  color: #ffffff;
+  font-size: 25px;
+}
+.btn-danger {
+  color: #fff;
+  background-color: #660033;
+  border-color: #660033;
+  font-size: 30px;
+}
+a {
+  color: #660033;
+  font-size: 20px;
+}
+h1 {
+  color: #660033;
+}
+h {
+  font-size: 23px;
+}
+.my-4 {
+  margin-bottom: 1.8rem !important;
+  background-color: #660033;
+}
+img.carro {
+  padding-top: 12px;
+}
+h2 {
+  font-size: 32px;
+  color: #660033;
+  padding-top: 0.5em;
+}
+.card {
+  border-color: #660033;
+}
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  .card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    height: 320px;
+  }
+}
+
+/* Aqui empieza el codigo para el carousel de pa interfaz pago) */
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container-pago {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 27px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/* Aqui termina el codigo para el carousel de pa interfaz pago) */

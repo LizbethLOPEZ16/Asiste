@@ -1,0 +1,146 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}BookNow{% endblock %}
+
+{% block body %}
+
+<div class="contenedor">
+<div class="row">
+    <div class="col-md-5">
+    <div id="cnt-form">
+        <h1> REQUEST A QUOTE FOR A PRIVATE TOUR  🍇 </h1>
+        <form id="contact-form" class="contact" name="contact-form"  method="post" action="enviarbook.php">
+            <div class="form-group">
+            <p>Please fill out and submit the form on this page to receive a price quote
+            for a private wine tour. (By private, we mean that you would not be
+            sharing this tour with any tour guests not in your party)
+            TOUR DATE.(If you are interested in multiple days or a date range,
+            please list this below in the comments field.)
+            </p>
+            <p>Name:</p>
+            <input type="text" name="nombre" class="form-control name-field" required="required" placeholder="">
+            </div>
+            <div class="form-group">
+            <p>Email:</p>
+            <input type="email" name="email" class="form-control mail-field" required="required" placeholder="">
+            </div>
+            <div class="form-group">
+            <p>Number of Person:</p>
+            <input type="personas" name="personas" class="form-control person-field" required="required" placeholder="">
+            </div>
+            <div class="calendario-inicio">
+            Date start: <input type="date" name="cumpleanios" step="1" min="2020-01-01" max="2030-12-31" value="2020-01-01">
+            </div>
+            <br>
+            <div class="form-group">
+            <p>Please note: If you would consider alternate dates, or if you would like
+            to reserve for more than one date, please note this in the Comments
+            box above. Additional tour dates visit different wineries.</p>
+          
+            <p>Message:</p>
+            <textarea name="mensaje" id="mensaje" required="required" class="form-control" rows="5" placeholder="Message">
+            </textarea>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" class="btn btn-danger">Send</button>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <div class="col-md-6">
+    <div class="card-reserva">
+          <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top">
+        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+      </div>
+      <!--/.Controls-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-3">
+                <img class="card-img-top" src="/images/home22.png"
+                  alt="Card image cap">
+              </div>
+            </div>
+
+            <div class="col-md-6 clearfix d-none d-md-block">
+              <div class="card mb-3">
+                <img class="card-img-top" src="/images/home23.png"
+                  alt="Card image cap">
+              </div>
+            </div>
+
+            <div class="col-md-6 clearfix d-none d-md-block">
+              <div class="card mb-3">
+                <img class="card-img-top" src="/images/home24.png"
+                  alt="Card image cap">
+              </div>
+            </div>
+
+            <div class="col-md-6 clearfix d-none d-md-block">
+              <div class="card mb-3">
+                <img class="card-img-top" src="/images/home25.png"
+                  alt="Card image cap">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-3">
+                <img class="card-img-top" src="/images/home6.png"
+                  alt="Card image cap">
+              </div>
+            </div>
+
+            <div class="col-md-6 clearfix d-none d-md-block">
+              <div class="card mb-3">
+                <img class="card-img-top" src="/images/home7.png"
+                  alt="Card image cap">
+              </div>
+            </div>
+
+            <div class="col-md-6 clearfix d-none d-md-block">
+              <div class="card mb-3">
+                <img class="card-img-top" src="/images/home8.png"
+                  alt="Card image cap">
+              </div>
+            </div>
+
+            <div class="col-md-6 clearfix d-none d-md-block">
+              <div class="card mb-3">
+                <img class="card-img-top" src="/images/home9.png"
+                  alt="Card image cap">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.Second slide-->
+
+
+      </div>
+      <!--/.Slides-->
+
+   <div></div></div></div></div></div>
+ </div>
+ </div>
+{% endblock %}
